@@ -30,6 +30,7 @@ li {
     background: #fff;
     box-sizing: border-box;
     width: 100%;
+    z-index: 1;
 }
 .logo img {
     height: 30px;
