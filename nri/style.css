@@ -25,7 +25,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1%;
+    padding: 0 2%;
     position: fixed;
     background: #fff;
     box-sizing: border-box;
@@ -35,7 +35,6 @@ li {
 .logo img {
     height: 30px;
     width: auto;
-    padding-top: 10px;
 }
 .header-container ul {
     padding-left: 20%;
@@ -63,9 +62,7 @@ li {
 /* ========= /ヘッダー ========== */
 /* ======= パンくずリスト ====== */
 .nav-clumb {
-    padding-top: 58px;
-    padding-left: 5%;
-    padding-bottom: 29px;
+    padding: 58px 2% 29px;
 }
 .clumb li {
     list-style: none;
@@ -75,14 +72,18 @@ li {
 }
 .clumb a {
     color: #aaa;
+    padding-right: 5px;
 }
-.clumb a::after {
-    content: ' >';
+.clumb li::after {
+    content: '>';
+}
+.clumb li:last-of-type::after {
+    content: none;
 }
 /* ======= タイトル ======= */
 .title {
-    background: no-repeat center url(/images/h1_whats_2.jpg);
-    background: cover;
+    background: no-repeat center url(images/h1_whats_2.jpg);
+    background-size: cover;
     height: 190px;
     padding: 30px 230px;
     margin-bottom: 35px;
@@ -146,10 +147,10 @@ li {
     background: #477fbd;
 }
 .download::before {
-    content: ">";
+    content: "›";
     position: absolute;
     top: 25px;
-    left: 5px;
+    left: 10px;
     color: #fff;
     font-weight: 100;
 }
@@ -223,7 +224,7 @@ li {
     width: 200px;
 }
 .menu li::before {
-    content: ">";
+    content: "›";
     position: absolute;
     top: 35%;
     left: 8px;
@@ -258,6 +259,7 @@ li {
 .nav-list li {
     padding-top: 30px;
     flex-basis: 250px;
+    position: relative;
 }
 .nav-list a {
     font-size: 14px;
@@ -267,22 +269,26 @@ li {
     width: auto;
 }
 .nav-list li > a::before {
-    content: "> ";
+    content: "›";
     color: #aaa;
-    
+    position: absolute;
+    left: -5px;
 }
 .nav-list a:hover {
     text-decoration: underline;
 }
 .nav-list > p:last-of-type {
     padding: 70px 0px 100px;
+    position: relative;
 }
 .nav-list > p:last-of-type > a {
     font-size: 16px;
 }
 .nav-list p > a:last-of-type::before {
-    content: "< ";
+    content: "‹";
     color: #aaa;
+    position: absolute;
+    left: -5px;
 }
 /* ======== follow ========= */
 .follow {
@@ -313,11 +319,12 @@ li {
     margin: 0 auto;
 }
 .bottom-list ul {
-    padding: 50px 1%;
-    width: 21%;
+    padding: 50px 1.5%;
+    width: 20%;
 }
 .bottom-list li {
     padding: 10px;
+    position: relative;
 }
 .bottom-list a {
     font-size: 14px;
@@ -325,8 +332,10 @@ li {
     display: block;
 }
 .bottom-list a::before {
-    content: "> ";
+    content: "›";
     color: #aaa;
+    position: absolute;
+    left: -5px;
 }
 .bottom-list li:first-of-type{
     padding-bottom: 20px;
