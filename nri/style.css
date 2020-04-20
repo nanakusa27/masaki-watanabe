@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+/* ========= すべて共有 ========== */
+html, body {
+    font-size: 16px;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/* ========= ヘッダー ========== */
+.header-container {
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    position: fixed;
+    background: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1;
+}
+.logo img {
+    height: 30px;
+    width: auto;
+}
+.header-container ul {
+    padding-left: 22%;
+    display: flex;
+}
+.header-container li {
+    font-size: 14px;
+    margin-right: 13px;
+}
+.header-container li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
+    padding: 20px 0;
+}
+.header-container li a:hover {
+    border-bottom: 2px solid #0c419a;
+    color: #0c419a;
+}
+.item img {
+    height: 20px;
+    width: auto;
+}
+/* ========= /ヘッダー ========== */
+/* ======= パンくずリスト ====== */
+.nav-clumb {
+    padding: 58px 2% 29px;
+}
+.clumb li {
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+    color: #aaa;
+}
+.clumb a {
+    color: #aaa;
+    padding-right: 5px;
+}
+.clumb li::after {
+    content: '>';
+}
+.clumb li:last-of-type::after {
+    content: none;
+}
+/* ======= タイトル ======= */
+.title {
+    background: no-repeat center url(images/h1_whats_2.jpg);
+    background-size: cover;
+    height: 190px;
+    padding: 30px 230px;
+    margin-bottom: 35px;
+    font-size: 28px;
+    line-height: 50px;
+    color: #fff;
+}
+.title span {
+    font-size: 20px;
+    font-weight: 300;
+}
+/* ======= シェアボタン ======= */
+.wrapper-share {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
+.wrapper-share p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+}
+.wrapper-share img {
+    height: 25px;
+    width: auto;
+    padding-left: 20px;
+}
+/*  ========= メイン =======  */
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.primary{
+    padding: 10px;
+}
+.primary h2{
+    font-size: 21px;
+    padding-bottom: 40px;
+    text-indent: 2em;
+    background: url(images/bleu.png) no-repeat;
+    background-position: 6px 2px ;
+}
+.primary p {
+    line-height: 30px;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+/* ======= ダウンロードボタン ====== */
+.download {
+    background: #1f5bac;
+    width: 300px;
+    height: 70px;
+    text-align: center;
+    margin: 40px auto;
+    position: relative;
+}
+.download:hover {
+    background: #477fbd;
+}
+.download::before {
+    content: "›";
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    color: #fff;
+    font-weight: 100;
+}
+.download a {
+    color: #fff;
+    font-weight: 300;
+    display: block;
+    padding-top: 16px;
+}
+.download a::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(images/unnamed.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+.next {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 50px 0;
+}
+.next a {
+    color: #0c419a;
+    padding: 5px;
+}
+.next p:first-of-type:before {
+    content: "<";
+}
+.next p:last-of-type:after {
+    content: ">";
+}
+.next a:hover {
+    text-decoration: underline;
+}
+/* ======== メニュー ======= */
+.menu {
+    background: #deecf8;
+    width: auto;
+    height: 210px;
+    padding: 20px 10px;
+    margin-bottom: 80px;
+}
+.menu h2 {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+}
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.menu li {
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 208px;
+    margin: 10px;
+    padding: 18px 15px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.menu li:hover {
+    background: #f4f4f4;
+}
+.menu a {
+    color: #0c419a;
+    width: 200px;
+}
+.menu li::before {
+    content: "›";
+    position: absolute;
+    top: 35%;
+    left: 8px;
+    color: #aaa;
+}
+/* ========== nav-list ========= */
+.nav-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.nav-list > p:first-of-type {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 32px 0;
+    border-top: 2px solid #333;
+    border-bottom: 1px dotted #999;
+}
+.nav-list > div > p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    padding-top: 30px;
+}
+.nav-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border-bottom: 1px dotted #999;
+    padding-bottom: 30px;
+}
+.nav-list li {
+    padding-top: 30px;
+    flex-basis: 250px;
+    position: relative;
+}
+.nav-list a {
+    font-size: 14px;
+    color: #0c419a;
+    padding-left: 10px;
+    display: block;
+    width: auto;
+}
+.nav-list li > a::before {
+    content: "›";
+    color: #aaa;
+    position: absolute;
+    left: -5px;
+}
+.nav-list a:hover {
+    text-decoration: underline;
+}
+.nav-list > p:last-of-type {
+    padding: 70px 0px 100px;
+    position: relative;
+}
+.nav-list > p:last-of-type > a {
+    font-size: 16px;
+}
+.nav-list p > a:last-of-type::before {
+    content: "‹";
+    color: #aaa;
+    position: absolute;
+    left: -5px;
+}
+/* ======== follow ========= */
+.follow {
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.follow img {
+    height: 30px;
+    width: auto;
+    padding: 20px;
+}
+.follow p {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: HelveticaNeue;
+    padding-right: 30px;
+}
+/* ========= bottom-list ========= */
+.bottom-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bottom-list ul {
+    padding: 50px 1.5%;
+    width: 20%;
+}
+.bottom-list li {
+    padding: 10px;
+    position: relative;
+}
+.bottom-list a {
+    font-size: 14px;
+    color: #333;
+    display: block;
+}
+.bottom-list a::before {
+    content: "›";
+    color: #aaa;
+    position: absolute;
+    left: -5px;
+}
+.bottom-list li:first-of-type{
+    padding-bottom: 20px;
+}
+.bottom-list li:first-of-type a {
+    font-size: 16px;
+    font-weight: 700;
+}
+.bottom-list a:hover {
+    text-decoration: underline;
+}
+.bottom-list .bottom-list-last {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    width: 47%;
+}
+.bottom-list-last li { 
+    flex-basis: 40%;
+    padding: 10px 10px 20px;
+}
+.bottom-list-last a {
+    font-size: 16px;
+    font-weight: 700;
+}
+.bottom-list-last li:nth-of-type(odd){
+    padding-right: 10%;
+}
+/* ======== フッター ======= */
+footer ul {
+    border-top: 1px solid #ccc;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+footer li {
+    padding: 0 1%;
+    border-right: 1px solid #ccc;
+    line-height: 10px;
+}
+footer li:last-of-type {
+    border-right: #fff;
+}
+footer a {
+    font-size: 12px;
+    color: #999;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer small {
+    padding: 0 18%;
+    display: block;
+    padding-bottom: 100px;
+    font-size: 5px;
+}
