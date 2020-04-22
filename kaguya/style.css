@@ -71,7 +71,7 @@ a{
     background-image: url(images/home_top.png);
     background-repeat: no-repeat;
 }
-.main {
+main {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -148,7 +148,6 @@ a{
     text-shadow: 0px 0px 6px #000000E0;
     width: 320px;
     line-height: 320px;
-    text-align: center;
 }
 
 .view {
@@ -190,8 +189,7 @@ a{
     height: 32px;
     font-size: 14px;
 }
-
-.recruit h2{
+.home-recruit h2{
     padding-bottom: 18px;
 }
 
@@ -220,4 +218,90 @@ a{
     letter-spacing: 0.44px;
     text-align: center;
     color: #fff;
+}
+
+/* ====== news,recruit,contact ===== */
+.title {
+    height: 456px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 191px 959px 224px 228px;
+    box-sizing: border-box;
+    color: #918F89;
+    font-weight: 300;
+}
+.news-title {
+    background-image: url(images/news_top.png);
+}
+.recruit-title {
+    background-image: url(images/recruit_top.png);
+}
+.contact-title {
+    background-image: url(images/contact_top.png);
+    color: #FCFCFC;
+}
+.news, .recruit, .contact {
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 320px;
+}
+.contact > p {
+    padding-bottom: 72px;
+}
+.recruit h2 {
+    padding-bottom: 32px;
+}
+
+/* ======== recruit-table ======== */
+table {
+    border-collapse: separate;
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 640px;
+}
+th,td {
+    border-bottom: 1px solid #707070;
+    border-right: 1px solid #707070;
+}
+th {
+   width: 144px;
+    background-color: #dcdbd9;
+    vertical-align: middle;
+}
+.top-left {
+        border-radius: 4px 0 0 0; 
+        border-top: 1px solid #707070;
+        border-left:  1px solid #707070;
+    }
+.top-right {
+        border-radius: 0 4px 0 0;
+        border-top: 1px solid #707070;
+    }
+.bottom-left {
+        border-radius: 0 0 0 4px;
+        border-left: 1px solid #707070;
+    }
+.bottom-right {
+        border-radius: 0 0 4px 0;
+    }
+
+td {
+    text-align: left;
+    padding-left: 48px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+table p {
+    font-size: 14px;
+}
+table li {
+    line-height: 23px;
+    font-size: 14px;
+}
+table p:first-of-type {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+.dot li::before {
+    content: "・";
 }
