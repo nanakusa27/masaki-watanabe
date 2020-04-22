@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 html body {
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: #fcfcfc;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #FCFCFC;
     color: #3B3B3B;
 }
 main h2 {
@@ -32,8 +32,8 @@ a{
     border: 0;
 }
 .btn:hover {
-    color: #fff;
-    background-color: #adadad;
+    color: #FFFFFF;
+    background-color: #ABABAB;
 }
 .container {
     padding-top: 274px;
@@ -81,7 +81,7 @@ main {
 .home-title {
     font-size: 53px;
     line-height: 73px;
-    color: #918f89;
+    color: #918F89;
     letter-spacing: 2.65px;
     background: rgba(255,255,255,0.8);
     padding: 32px 32px 32px 88px;
@@ -175,6 +175,7 @@ main {
     opacity: 0.6;
     padding-left: 10px;
     border-radius: 16px;
+    font-family: "Noto Sans";
 }
 .input-1line{ 
     height: 32px;
@@ -211,13 +212,13 @@ main {
     font-size: 18px;
 }
 .footer li > a {
-    color: #fff;
+    color: #FFFFFF;
 }
 .copyright {
     font-size: 11px;
     letter-spacing: 0.44px;
     text-align: center;
-    color: #fff;
+    color: #FFFFFF;
 }
 
 /* ====== news,recruit,contact ===== */
@@ -265,7 +266,7 @@ th,td {
 }
 th {
    width: 144px;
-    background-color: #dcdbd9;
+    background-color: #DCDBD9;
     vertical-align: middle;
 }
 .top-left {
