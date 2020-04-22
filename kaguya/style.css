@@ -2,7 +2,7 @@
 
 html body {
     font-family: 'Noto Sans JP', sans-serif;
-    background: #fcfcfc;
+    background-color: #fcfcfc;
     color: #3B3B3B;
 }
 main h2 {
@@ -15,7 +15,7 @@ a{
     text-decoration: none;
     color: #3B3B3B;
 }
-main p {
+.home-main p {
     font-size: 15px;
     letter-spacing: 0.36px;
     line-height: 2.5em;
@@ -29,6 +29,11 @@ main p {
     background: #D1D1D1;
     border-radius: 40px;
     color: #707070;
+    border: 0;
+}
+.btn:hover {
+    color: #fff;
+    background-color: #adadad;
 }
 .container {
     padding-top: 274px;
@@ -65,6 +70,8 @@ main p {
 .home-main {
     background-image: url(images/home_top.png);
     background-repeat: no-repeat;
+}
+.main {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -121,10 +128,10 @@ main p {
 .couch p {
     background: rgba(0, 0, 0, 0.5);
 }
-.sofa {
+.chair {
     background-image: url(images/news02.png);
 }
-.sofa p {
+.chair p {
     background: rgba(0, 0, 0, 0.4);
 }
 .table {
@@ -141,6 +148,7 @@ main p {
     text-shadow: 0px 0px 6px #000000E0;
     width: 320px;
     line-height: 320px;
+    text-align: center;
 }
 
 .view {
@@ -189,7 +197,7 @@ main p {
 
 /* =========== footer ========== */
 .footer {
-    background: #918F89;
+    background-color: #918F89;
     padding: 120px 224px 24px 224px;
 }
 .footer-inner {
