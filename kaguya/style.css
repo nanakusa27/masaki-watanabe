@@ -273,18 +273,18 @@ th {
         border-radius: 4px 0 0 0; 
         border-top: 1px solid #707070;
         border-left:  1px solid #707070;
-    }
+}
 .top-right {
         border-radius: 0 4px 0 0;
         border-top: 1px solid #707070;
-    }
+}
 .bottom-left {
         border-radius: 0 0 0 4px;
         border-left: 1px solid #707070;
-    }
+}
 .bottom-right {
         border-radius: 0 0 4px 0;
-    }
+}
 
 td {
     text-align: left;
