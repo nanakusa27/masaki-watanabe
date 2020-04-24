@@ -40,11 +40,9 @@ a{
 @media screen and (max-width: 375px){
     main h2 {
         font-size: 24px;
-        letter-spacing: 2.4;
     }
     .main-home p {
         font-size: 14px;
-        letter-spacing: 0.42;
     }
     .contact .narrow {
         display: block;
