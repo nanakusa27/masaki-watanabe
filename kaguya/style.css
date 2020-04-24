@@ -19,7 +19,6 @@ a{
     font-size: 15px;
     letter-spacing: 0.36px;
     line-height: 2.5em;
-    white-space: pre-line;
     text-align: center;
 }
 .btn {
@@ -35,10 +34,25 @@ a{
     color: #FFFFFF;
     background-color: #ABABAB;
 }
-.container {
-    padding-top: 274px;
+.contact .narrow {
+    display: none;
 }
-
+@media screen and (max-width: 375px){
+    main h2 {
+        font-size: 24px;
+    }
+    .main-home p {
+        font-size: 14px;
+    }
+    .contact .narrow {
+        display: block;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+    }
+    .contact .wide {
+        display: none;
+    }
+}
 /* ========== /共通 ========= */
 
 .header{
@@ -65,11 +79,31 @@ a{
 .here a {
     color: #3B3B3B;
 }
+@media screen and (max-width: 375px){
+    .header {
+        background: #918F89;
+        background-image: url(images/logo_footer@2x.png);
+        background-repeat: no-repeat;
+        background-size: 40px 24px;
+        background-position: center;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+    .header ul,
+    .header img {
+        display: none;
+    }
+}
 /* ====== /header ======= */
 
 .home-main {
     background-image: url(images/home_top.png);
     background-repeat: no-repeat;
+}
+.container {
+    padding-top: 274px;
 }
 main {
     max-width: 1280px;
@@ -88,6 +122,32 @@ main {
     display: inline-block;
     margin-bottom: 333px;
 }
+@media screen and (max-width: 375px){
+    .home-main {
+        padding-top: 56px;
+        background-image: url(images/home_top_sp.png);
+        background-position: top 56px center;
+        background-size: auto 800px;
+    }
+    .container {
+        padding-top: 200px;
+    }
+    .home-title {
+        font-size: 39px;
+        line-height: 48px;
+        letter-spacing: 1.95px;
+        display: flex;
+        flex-direction: column;
+        background: none;
+        padding: 0;
+        margin-bottom: 312px;
+    }
+    .home-title span {
+        background: rgba(255,255,255,0.6);
+        padding: 16px 16px 16px 54px;
+        margin: 0 auto 16px 0;
+    }
+}
 .home-div-main{
     padding: 80px 88px;
 }
@@ -105,12 +165,47 @@ main {
     font-size: 25px;
     letter-spacing: 2.5px;
     padding-top: 240px;
-    padding-bottom: 30px;
+    padding-bottom: 71px;
 }
 .concept p {
     font-size: 12px;
     padding-bottom: 90px;
-}/* /concept */
+}
+.concept .wide::after {
+    content: "\A";
+    white-space: pre;
+}
+
+@media screen and (max-width: 375px){
+    .home-div-main {
+        padding: 88px 24px 0;
+    }
+    .concept {
+        height: 576px;
+        background-image: url(images/concept_sp.png);
+        background-size: 328px 264px;
+        background-position:  top 312px left 0px;
+    }
+    .concept h2,
+    .concept p {
+        padding: 0;
+        text-align: center;
+    }
+    .concept h2 {
+        font-size: 21px;
+        letter-spacing: 2.1px;
+        padding-bottom: 32px;
+    }
+    .concept p {
+        font-size: 14px;
+        letter-spacing: 0.42px;
+    }
+    .concept .narrow::after {
+        content: "\A";
+        white-space: pre;
+    }
+}
+/* /concept */
 .news ul {
     display: flex;
     justify-content: center;
@@ -159,8 +254,41 @@ main {
 .view a {
     padding-right: 10px;
 }
-.view::after{
-    content: "›";    
+.view::after {
+    content: "›"; 
+}
+@media screen and (max-width: 375px){
+    .home-main .news {
+        height: 976px;
+    }
+    .news ul {
+        flex-wrap: wrap;
+    }
+    .news li {
+        margin: 0;
+        width: 272px;
+        height: 272px;
+        background-size: 272px;
+        margin-bottom: 24px;
+    }
+    .news li p {
+        width: 272px;
+        height: 272px;
+        line-height: 272px;
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 15px;
+    }
+    .view {
+        padding-top: 6px;
+        padding-bottom: 8px;
+        opacity: 1;
+    }
+    .view a {
+        font-size: 18px;
+    }
+    .view::after {
+        color: #919191;
+    }
 }
 
 .download {
@@ -169,6 +297,20 @@ main {
     font-size: 18px;
     letter-spacing: 1.8px;
 }
+.catalog .narrow::after {
+    content: "\A";
+    white-space: pre;
+}
+@media screen and (max-width: 375px){
+    .catalog p {
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .download {
+        width: 280px;
+    }
+}
+
 .input {
     width: 454px;
     border: 1px solid #707070;
@@ -177,7 +319,7 @@ main {
     border-radius: 16px;
     font-family: "Noto Sans";
 }
-.input-1line{ 
+.input-1line { 
     height: 32px;
     margin-bottom: 24px;
 }
@@ -190,8 +332,35 @@ main {
     height: 32px;
     font-size: 14px;
 }
-.home-recruit h2{
-    padding-bottom: 18px;
+@media screen and (max-width:375px){
+    .input {
+        width: 286px;
+        border: 0.5px solid #707070;
+        border-radius: 11px;
+        padding-left: 17px;
+        font-size: 14px;
+    }
+    .input-1line {
+        margin-bottom: 16px;
+    }
+    .input-send {
+        width: 173px;
+        height: 48px;
+        margin-top: 32px;
+        
+    }
+}
+.home-recruit h2 {
+    padding-bottom: 48px;
+}
+.home-recruit span::after {
+    content: "\A";
+    white-space: pre;
+}
+@media screen and (max-width: 375px){
+    .home-recruit h2 {
+        padding-bottom: 32px;
+    }
 }
 
 /* =========== footer ========== */
@@ -220,6 +389,27 @@ main {
     text-align: center;
     color: #FFFFFF;
 }
+@media screen and (max-width: 375px){
+    .footer {
+        padding: 72px 0 32px;
+        height: 232px;
+        box-sizing: border-box;
+    }
+    .footer-inner {
+        justify-content: center;
+        margin-bottom: 82px;
+    }
+    .footer img {
+        width: 52px;
+        height: 32px;
+    }
+    .footer ul {
+        display: none;
+    }
+    .copyright {
+        font-size: 10px;
+    }
+}
 
 /* ====== news,recruit,contact ===== */
 .title {
@@ -241,15 +431,15 @@ main {
     background-image: url(images/contact_top.png);
     color: #FCFCFC;
 }
-.news, .recruit, .contact {
+.news-main, .recruit-main, .contact-main {
     text-align: center;
     padding-top: 160px;
     padding-bottom: 320px;
 }
-.contact > p {
+.contact-main > p {
     padding-bottom: 72px;
 }
-.recruit h2 {
+.recruit-main h2 {
     padding-bottom: 32px;
 }
 
