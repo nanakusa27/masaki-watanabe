@@ -554,9 +554,9 @@ table p:first-of-type {
 }
 @media screen and (max-width: 375px){
     table {
-       width: 344px;
-       box-sizing: border-box;
-       margin: 0 15px;
+        width: 344px;
+        box-sizing: border-box;
+        margin: 0 15px;
     }
     th {
         font-size: 14px;
