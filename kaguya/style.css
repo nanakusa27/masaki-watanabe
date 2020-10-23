@@ -447,9 +447,7 @@ main {
 .contact-main .h2-narrow {
     display: none;
 }
-.link-next {
-    pointer-events: none;
-}
+
 @media screen and (max-width: 375px){
     .title {
         height: 704px;
@@ -457,9 +455,6 @@ main {
         padding: 0;
         text-align: center;
         font-size: 25px;
-    }
-    .link-next {
-        pointer-events: auto;
     }
     .news-title {
         background-image: url(images/news_top_sp.png);
@@ -483,11 +478,6 @@ main {
     }
     .contact-main h2 {
         padding-bottom: 32px;
-    }
-    .link-next {
-        display: block;
-        height: 648px;
-        padding-top:  256px;
     }
     .contact-main > p {
         display: none;
