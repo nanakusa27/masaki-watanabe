@@ -26,8 +26,10 @@ if ($(window).width() <= maxWidth) {
 $('.input-send').on('click', (e) => {
   e.preventDefault();
   $('.input-send')
-    .val('TRANSMISSION COMPLETED')
-    .css('padding', '0 25px');
+    .delay(600).queue(() => {
+      $('.input-send').val('TRANSMISSION COMPLETED');
+    })
+    .css('width', '320px');
   });
 
   // ハンバーガーメニュー
@@ -43,7 +45,10 @@ $('.input-send').on('click', (e) => {
   $('.input-send').on('click', (e) => {
     e.preventDefault();
     $('.input-send')
-    .val('TRANSMISSION COMPLETED')
+      .delay(600).queue(() => {
+        $('.input-send').val('TRANSMISSION COMPLETED');
+      })
+      .css('width', '380px');
   });
 
   // News部分のhoverアニメーション

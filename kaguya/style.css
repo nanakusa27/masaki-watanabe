@@ -318,10 +318,11 @@ main {
     padding-top: 10px;
 }
 .input-send {
-    padding: 0 60px;
+    width: 160px;
     height: 32px;
     font-size: 14px;
     letter-spacing: 2px;
+    transition: 1s;
 }
 .input-narrow {
     display: none;
@@ -344,11 +345,12 @@ main {
         display: block;
     }
     .input-send {
-        padding: 0 50px;
+        width: 172px;
         height: 48px;
         margin-top: 32px;
         font-size: 18px;
         letter-spacing: 0.9px;
+        transition: 1s;
     }
 }
 .home-recruit h2 {
