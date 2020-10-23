@@ -7,7 +7,7 @@ $(() => {
 });
 
 $(() => {
-  $('a').on('click', function(e) {
+  $('a').on('click', (e) => {
     const url = $(this).attr('href');
     e.preventDefault();
     $('body').fadeOut(300);
