@@ -18,7 +18,7 @@ $(() => {
 })
 
 // 画面サイズ(スマホ、PC)により条件分岐
-var maxWidth = 375;
+const maxWidth = 375;
 if ($(window).width() <= maxWidth) {
   // 375px以下の時の処理
 
