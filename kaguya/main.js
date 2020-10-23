@@ -7,9 +7,9 @@ $(() => {
 });
 
 $(() => {
-  $('a').on('click', (e) => {
+  $('a').on('click', () => {
+    $('a').preventDefault();
     const url = $(this).attr('href');
-    e.preventDefault();
     $('body').fadeOut(300);
     setTimeout(() => {
     location.href = url;
